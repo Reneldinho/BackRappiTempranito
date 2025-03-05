@@ -1,0 +1,24 @@
+{
+  "name": "backrappitempranito",
+  "version": "1.0.0",
+  "description": "Primer proyecto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Reneldinho/BackRappiTempranito.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Reneldinho/BackRappiTempranito/issues"
+  },
+  "homepage": "https://github.com/Reneldinho/BackRappiTempranito#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
