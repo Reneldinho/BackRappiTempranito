@@ -2,6 +2,8 @@ import mongoose from "mongoose";
 
 //La volvimos una variable de entorno
 let url = process.env.URI_MONGO
+console.log(url);
+
 
 // mongoose.connect(url).then(() => console.log("database connected")).catch(error => console.log(error));
 

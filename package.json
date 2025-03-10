@@ -5,9 +5,15 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./server.js",
-    "dev": "nodemon ./server.js"
+    "dev": "nodemon ./server.js",
+    "dataUsers": "node ./models/data/usersData.js",
+    "dataCars": "node ./models/data/carsData.js",
+    "dataCellulars": "node ./models/data/cellularsData.js",
+    "dataElevators": "node ./models/data/elevatorsData.js",
+    "dataScreens": "node ./models/data/screensData.js",
+    "dataFruits": "node ./models/data/fruitsData.js",
+    "dataBooks": "node ./models/data/booksData.js"
   },
   "repository": {
     "type": "git",
