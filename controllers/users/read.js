@@ -14,4 +14,36 @@ let allUser = async (req, res, next) => {
     }
 };
 
-export default allUser;
+let userByname = async (req, res, next) => {
+    try {
+        let nameQuery = req.params.nameParams;
+        console.log(nameQuery);
+        let all = await User.findById({ idQuery });
+        return res.status(200).json({
+            response: all
+        });
+    }
+    catch (error) {
+        return res.status(500).json({
+            response: error
+        });
+    }
+};
+
+let userById = async (req, res, next) => {
+    try {
+        let idQuery = req.params.idParams;
+        console.log(idQuery);
+        let all = await User.findById(idQuery);
+        return res.status(200).json({
+            response: all
+        });
+    }
+    catch (error) {
+        return res.status(500).json({
+            response: error
+        });
+    }
+};
+
+export { allUser, userByname, userById };

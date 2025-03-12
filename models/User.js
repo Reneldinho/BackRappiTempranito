@@ -12,4 +12,5 @@ let schema = Schema({
 });
 
 let User = model(Collection, schema);
+
 export default User;

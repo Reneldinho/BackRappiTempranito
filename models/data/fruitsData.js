@@ -1,113 +1,128 @@
 import 'dotenv/config.js';
 import "../../config/database.js";
-import Screen from '../Screen.js';
+import Fruit from '../Fruit.js';
 
-let screens = [
+let fruits = [
   {
-    "brightness": "300 nits",
-    "contrast": "1000:1",
-    "resolution": "1920x1080",
-    "size": "24 pulgadas",
-    "model": "Monitor A1"
+    "name": "Apple",
+    "fruitColor": "Red",
+    "size": "Medium",
+    "weight": "150g",
+    "type": "Pome",
+    "price": 0.75
   },
   {
-    "brightness": "350 nits",
-    "contrast": "1200:1",
-    "resolution": "2560x1440",
-    "size": "27 pulgadas",
-    "model": "Monitor B2"
+    "name": "Banana",
+    "fruitColor": "Yellow",
+    "size": "Medium",
+    "weight": "120g",
+    "type": "Berry",
+    "price": 0.50
   },
   {
-    "brightness": "400 nits",
-    "contrast": "1500:1",
-    "resolution": "3840x2160",
-    "size": "32 pulgadas",
-    "model": "TV C3"
+    "name": "Orange",
+    "fruitColor": "Orange",
+    "size": "Medium",
+    "weight": "180g",
+    "type": "Citrus",
+    "price": 0.60
   },
   {
-    "brightness": "250 nits",
-    "contrast": "800:1",
-    "resolution": "1366x768",
-    "size": "19 pulgadas",
-    "model": "Monitor D4"
+    "name": "Strawberry",
+    "fruitColor": "Red",
+    "size": "Small",
+    "weight": "30g",
+    "type": "Berry",
+    "price": 0.25
   },
   {
-    "brightness": "450 nits",
-    "contrast": "1800:1",
-    "resolution": "3440x1440",
-    "size": "34 pulgadas",
-    "model": "Monitor E5"
+    "name": "Grapes",
+    "fruitColor": "Purple",
+    "size": "Small",
+    "weight": "5g",
+    "type": "Berry",
+    "price": 0.10
   },
   {
-    "brightness": "500 nits",
-    "contrast": "2000:1",
-    "resolution": "3840x2160",
-    "size": "55 pulgadas",
-    "model": "TV F6"
+    "name": "Watermelon",
+    "fruitColor": "Green/Red",
+    "size": "Large",
+    "weight": "5000g",
+    "type": "Melon",
+    "price": 5.00
   },
   {
-    "brightness": "320 nits",
-    "contrast": "1100:1",
-    "resolution": "1920x1080",
-    "size": "27 pulgadas",
-    "model": "Monitor G7"
+    "name": "Mango",
+    "fruitColor": "Yellow/Orange",
+    "size": "Medium",
+    "weight": "300g",
+    "type": "Drupe",
+    "price": 1.50
   },
   {
-    "brightness": "380 nits",
-    "contrast": "1400:1",
-    "resolution": "2560x1440",
-    "size": "32 pulgadas",
-    "model": "Monitor H8"
+    "name": "Pineapple",
+    "fruitColor": "Yellow/Brown",
+    "size": "Large",
+    "weight": "1500g",
+    "type": "Multiple",
+    "price": 3.00
   },
   {
-    "brightness": "420 nits",
-    "contrast": "1600:1",
-    "resolution": "3840x2160",
-    "size": "43 pulgadas",
-    "model": "TV I9"
+    "name": "Blueberry",
+    "fruitColor": "Blue",
+    "size": "Small",
+    "weight": "2g",
+    "type": "Berry",
+    "price": 0.15
   },
   {
-    "brightness": "280 nits",
-    "contrast": "900:1",
-    "resolution": "1600x900",
-    "size": "21.5 pulgadas",
-    "model": "Monitor J10"
+    "name": "Kiwi",
+    "fruitColor": "Green/Brown",
+    "size": "Small",
+    "weight": "75g",
+    "type": "Berry",
+    "price": 0.40
   },
   {
-    "brightness": "480 nits",
-    "contrast": "1900:1",
-    "resolution": "3440x1440",
-    "size": "38 pulgadas",
-    "model": "Monitor K11"
+    "name": "Pear",
+    "fruitColor": "Green/Yellow",
+    "size": "Medium",
+    "weight": "170g",
+    "type": "Pome",
+    "price": 0.80
   },
   {
-    "brightness": "550 nits",
-    "contrast": "2200:1",
-    "resolution": "3840x2160",
-    "size": "65 pulgadas",
-    "model": "TV L12"
+    "name": "Cherry",
+    "fruitColor": "Red",
+    "size": "Small",
+    "weight": "5g",
+    "type": "Drupe",
+    "price": 0.20
   },
   {
-    "brightness": "330 nits",
-    "contrast": "1150:1",
-    "resolution": "1920x1080",
-    "size": "28 pulgadas",
-    "model": "Monitor M13"
+    "name": "Avocado",
+    "fruitColor": "Green",
+    "size": "Medium",
+    "weight": "200g",
+    "type": "Berry",
+    "price": 1.25
   },
   {
-    "brightness": "390 nits",
-    "contrast": "1450:1",
-    "resolution": "2560x1440",
-    "size": "34 pulgadas",
-    "model": "Monitor N14"
+    "name": "Lemon",
+    "fruitColor": "Yellow",
+    "size": "Small",
+    "weight": "100g",
+    "type": "Citrus",
+    "price": 0.30
   },
   {
-    "brightness": "430 nits",
-    "contrast": "1700:1",
-    "resolution": "3840x2160",
-    "size": "50 pulgadas",
-    "model": "TV O15"
+    "name": "Raspberry",
+    "fruitColor": "Red",
+    "size": "Small",
+    "weight": "4g",
+    "type": "Berry",
+    "price": 0.18
   }
 ];
 
-Screen.insertMany(screens);
+Fruit.insertMany(fruits);
